@@ -1,0 +1,23 @@
+{
+  "name": "aikon-post-update-scheduler",
+  "version": "1.0.0",
+  "description": "WordPress plugin to schedule content updates for any page or post type.",
+  "scripts": {
+    "wp:start": "wp-env start --xdebug",
+    "wp:stop": "wp-env stop",
+    "wp:cli": "wp-env cli",
+    "start": "wp-scripts start assets/js/dateTimePicker.js",
+    "build": "wp-scripts build",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-css",
+    "zip": "wp-scripts plugin-zip"
+  },
+  "author": "andreas-andersson",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/components": "^29.8.0",
+    "@wordpress/date": "^5.22.0",
+    "@wordpress/env": "^10.22.0",
+    "@wordpress/scripts": "^30.15.0"
+  }
+}

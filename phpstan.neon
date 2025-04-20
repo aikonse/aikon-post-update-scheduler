@@ -1,0 +1,6 @@
+parameters:
+    level: max
+    bootstrapFiles:
+        - aikon-post-update-scheduler.php
+    paths:
+        - src

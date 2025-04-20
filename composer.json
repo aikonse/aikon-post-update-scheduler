@@ -1,0 +1,35 @@
+{
+    "name": "aikonse/aikon-post-update-scheduler",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "description": "Aikon Post Update Scheduler",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aikon\\PostUpdateScheduler\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse src",
+        "phpcs:fix": "php-cs-fixer fix",
+        "phpcs:check": "php-cs-fixer fix --dry-run",
+        "rector": "rector process src"
+    },
+    "require": {
+        "php": ">=8"
+    },
+    "require-dev": {
+        "szepeviktor/phpstan-wordpress": "^2.0",
+        "rector/rector": "^2.0",
+        "phpstan/extension-installer": "^1.4",
+        "friendsofphp/php-cs-fixer": "^3.68"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
