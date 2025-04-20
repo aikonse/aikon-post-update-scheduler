@@ -1,6 +1,5 @@
 {
     "name": "aikonse/aikon-post-update-scheduler",
-    "version": "1.0.0",
     "type": "wordpress-plugin",
     "description": "Aikon Post Update Scheduler",
     "license": "MIT",
