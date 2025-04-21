@@ -1,7 +1,7 @@
 {
     "name": "aikonse/aikon-post-update-scheduler",
-    "type": "wordpress-plugin",
     "description": "Aikon Post Update Scheduler",
+    "type": "wordpress-plugin",
     "license": "MIT",
     "autoload": {
         "psr-4": {
