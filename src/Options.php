@@ -43,7 +43,7 @@ final class Options
 
         add_settings_section(
             'apus_section',
-            '',
+            __('Aikon Post Update Scheduler', 'aikon-post-update-scheduler'),
             'intval',
             'apus'
         );

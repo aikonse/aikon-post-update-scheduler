@@ -14,9 +14,6 @@ use Aikon\PostUpdateScheduler\Services\MetaBoxService;
 use Aikon\PostUpdateScheduler\Services\PostService;
 use Aikon\PostUpdateScheduler\Services\PublishingService;
 
-/**
- * Main plugin bootstrap class
- */
 class Plugin
 {
     /**

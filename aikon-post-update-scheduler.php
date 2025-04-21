@@ -20,6 +20,18 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+// Check minimum PHP version
+if (version_compare(PHP_VERSION, '8.0', '<')) {
+    add_action('admin_notices', function () {
+        ?>
+		<div class="notice notice-error">
+			<p><?php _e('Aikon Post Update Scheduler requires PHP 8.0 or higher.', 'aikon-role-manager');?></p>
+		</div>
+		<?php
+    });
+    exit;
+}
+
 // Define plugin constants
 define('APUS_VERSION', '2.3.5');
 define('APUS_PLUGIN_DIR', plugin_dir_path(__FILE__));
@@ -32,9 +44,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 use Aikon\PostUpdateScheduler\Plugin;
 
 // Initialize the plugin
-add_action('plugins_loaded', function(){
-    Plugin::bootstrap();
-}, 10);
+Plugin::bootstrap();
+
 
 /**
  * Handle plugin deactivation
