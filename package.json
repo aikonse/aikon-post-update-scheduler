@@ -7,9 +7,9 @@
     "wp:stop": "wp-env stop",
     "wp:cli": "wp-env cli",
     "start": "wp-scripts start assets/js/dateTimePicker.js",
-    "build": "wp-scripts build",
+    "build": "wp-scripts build assets/js/dateTimePicker.js",
     "lint:js": "wp-scripts lint-js",
-    "lint:css": "wp-scripts lint-css",
+    "lint:css": "wp-scripts lint-style \"assets/**/*.{css,scss}\" --allow-empty-input",
     "zip": "wp-scripts plugin-zip"
   },
   "author": "andreas-andersson",
@@ -27,5 +27,8 @@
     "webpack-dev-server": "^6.0.0",
     "qs": "^6.16.0",
     "uuid": "^11.1.1"
+  },
+  "dependencies": {
+    "@wordpress/element": "^8.6.0"
   }
 }
